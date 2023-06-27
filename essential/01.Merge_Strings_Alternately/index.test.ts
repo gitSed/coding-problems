@@ -13,7 +13,7 @@ const testcase: Array<[string, string, string]> = [
 
 describe("Merge Strings Alternately", () => {
   test.each(testcase)(
-    "mergeAlternately('%s', '%s') should return '%s'",
+    "mergeAlternately(%p, %p) should return %p",
     (word1, word2, output) => {
       expect(mergeAlternately(word1, word2)).toBe(output);
     }
